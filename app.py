@@ -15,7 +15,7 @@ def uploaded_file(filename):
 
 
 # -------------------- HOME --------------------
-@app.route('/api')
+@app.route('/')
 def home():
     return render_template('index.html')
 
