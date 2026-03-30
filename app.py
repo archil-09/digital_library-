@@ -19,7 +19,9 @@ def uploaded_file(filename):
 def home():
     return render_template('index.html')
 
-
+@app.route('/api')
+def home():
+    return 'api'
 # -------------------- REGISTER --------------------
 @app.route('/register', methods=['GET', 'POST'])
 def register():
